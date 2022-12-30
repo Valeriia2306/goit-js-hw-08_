@@ -10,7 +10,7 @@ const onPlay = function (data) {
 player.on('timeupdate', throttle(onPlay, 1000));
 time();
 function time() {
-  const currentTime = JSON.parse(localStorage.getItem(SAVE_TIME));
+  const currentTime = JSON.parse(null);
   if (currentTime === 0) {
     return;
   }
